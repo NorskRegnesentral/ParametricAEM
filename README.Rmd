@@ -1,0 +1,54 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ParametricAEM
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ParametricAEM is to estimate a parametric age-reading error matrix based on data where multiple readers have read the same fish. 
+
+## Installation
+
+You can install the development version of ParametricAEM from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("NorskRegnesentral/ParametricAEM")
+```
+
+## Example
+
+```{r example}
+library(ParametricAEM)
+file_path = system.file("extdata",
+                         "NSS_herring_scales.csv",
+                          package = "ParametricAEM")
+ data_nss_scales = read.csv(file_path, sep = ",")
+ data_exp = data_nss_scales[data_nss_scales$expertise == 1, ] # Extract experts
+ data_exp = data_exp[data_exp$age > 0, ]
+ data_analysis = Compute_modes(data_exp)
+ data_analysis_capped = Cap_ages(data_analysis)
+ fit = Estimate_model(data = data_analysis_capped,
+                      min_age = 3,
+                      max_age = 12,
+                      start = c(2, 0, 0, 0, 0.2),
+                      estimate = c(1, 1, 1, 1, 1))
+ errormatrix = Calculate_matrix(fit$estimate[, "Estimate"], min_age = 3, max_age = 12)
+ round(errormatrix, 3)
+
+## basic example code
+```
+
