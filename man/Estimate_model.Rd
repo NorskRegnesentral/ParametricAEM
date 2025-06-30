@@ -9,7 +9,8 @@ Estimate_model(
   min_age,
   max_age,
   start = c(2, 0, 0.5, 0, 0.2),
-  estimate = rep(1, 5)
+  estimate = rep(1, 5),
+  lowmode = FALSE
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ Estimate_model(
 \item{start}{Numerical vector with length 5. Starting values for the parameters in the order beta0, beta1, alpha0, alpha1, phi.}
 
 \item{estimate}{Vector of length 5 with indicators for whether each parameter should be estimated (1) or fixed (0). Defaults to estimating all parameters.}
+
+\item{lowmode}{Indicator for whether we should use the lowest modal age (1). Default is to use the modal age closest to the mean (0).}
 }
 \value{
 a list with par_est: the estimated parameters and corresponding standard deviations, Sigma: the covariance matrix for the estimated parameters, loglik: the log likelihood

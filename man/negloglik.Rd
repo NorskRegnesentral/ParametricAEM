@@ -4,7 +4,7 @@
 \alias{negloglik}
 \title{Negative log likelihood. This function is called by Estimate_model.}
 \usage{
-negloglik(param, data, par.fixed, min_age, max_age, parnames)
+negloglik(param, data, par.fixed, min_age, max_age, parnames, lowmode)
 }
 \arguments{
 \item{param}{Numerical vector with values for parameters that are estimated}
@@ -18,6 +18,8 @@ negloglik(param, data, par.fixed, min_age, max_age, parnames)
 \item{max_age}{Integer, the maximum age}
 
 \item{parnames}{Vector of all parameter names in the order: estimated parameters, fixed parameters}
+
+\item{lowmode}{Indicator for whether we should use the lowest modal age (1). Default is to use the modal age closest to the mean (0).}
 }
 \value{
 Float, the negative log likelihood
