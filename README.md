@@ -7,7 +7,9 @@
 <!-- badges: end -->
 
 The goal of ParametricAEM is to estimate a parametric age-reading error
-matrix based on data where multiple readers have read the same fish.
+matrix based on data where multiple readers have read the same fish. The
+package contains four such example data sets in inst/extdata, and
+scripts for analysing each of these in the folder scripts.
 
 ## Installation
 
