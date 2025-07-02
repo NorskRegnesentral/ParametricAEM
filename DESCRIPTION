@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Solveig", "Engebretsen", ,"solveig.engebretsen@nr.no", role = c("aut", "cre"))
 Description: Functions to estimate a parametric age-reading error matrix based on multiple age-readings of the same individual.
-License: MIT + file LICENSE
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
