@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: "./inst/extdata/age.bib"
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -18,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ParametricAEM is to estimate a parametric age-reading error matrix based on data where multiple readers have read the same fish. The package contains four such example data sets in inst/extdata, and scripts for analysing each of these in the folder demo. 
+The goal of ParametricAEM is to estimate a parametric age-reading error matrix based on data where multiple readers have read the same fish. The package contains four such example data sets in inst/extdata, and scripts for analysing each of these in the folder demo. The data sets have been generated using the SmartDots-tool [@SmartDots, @SmartDots_template, @SmartDots2024]. The data sets on scale and otolith readings of Norwegian Spring-Spawning Herring originate from an international age-reading exchange [@ices2023]. The data sets on Atlantic mackerel and North Sea herring originate from internal age-reading exchanges hosted by The Institute of Marine Research (IMR) of Norway. 
 
 ## Installation
 

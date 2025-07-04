@@ -9,7 +9,13 @@
 The goal of ParametricAEM is to estimate a parametric age-reading error
 matrix based on data where multiple readers have read the same fish. The
 package contains four such example data sets in inst/extdata, and
-scripts for analysing each of these in the folder demo.
+scripts for analysing each of these in the folder demo. The data sets
+have been generated using the SmartDots-tool Bekaert (2024). The data
+sets on scale and otolith readings of Norwegian Spring-Spawning Herring
+originate from an international age-reading exchange (ICES 2023a). The
+data sets on Atlantic mackerel and North Sea herring originate from
+internal age-reading exchanges hosted by The Institute of Marine
+Research (IMR) of Norway.
 
 ## Installation
 
@@ -54,3 +60,39 @@ file_path = system.file("extdata",
 
 ## basic example code
 ```
+
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
+
+<div id="ref-SmartDots2024" class="csl-entry">
+
+Bekaert, Karen. 2024. “<span class="nocase">SmartDots Report for the
+2024 Irish Sea Sole (sol.27.7a) age reading exchange (ID 1842)</span>.”
+<https://smartdots.ices.dk/sampleImages/2023/1842/SmartDots_Report_Event_1842_sole%207a%202024.docx>.
+
+</div>
+
+<div id="ref-ices2023" class="csl-entry">
+
+ICES. 2023a. “<span class="nocase">Workshop on age reading of Norwegian
+springspawning herring (*Clupea harengus*) (WKARNSSH)</span>.” *ICES
+Scientific Reports* 5 (84).
+<https://doi.org/10.17895/ices.pub.24105534>.
+
+</div>
+
+<div id="ref-SmartDots_template" class="csl-entry">
+
+———. 2023b. “<span class="nocase">SmartDots Report template</span>.”
+<https://github.com/ices-taf/SmartDotsReport_template/commits/master/report_full.Rmd>.
+
+</div>
+
+<div id="ref-SmartDots" class="csl-entry">
+
+———. 2024. “SmartDots.”
+<https://github.com/ices-taf/SmartDotsReport_template/>.
+
+</div>
+
+</div>
