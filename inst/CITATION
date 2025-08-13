@@ -1,0 +1,8 @@
+bibentry(
+  bibtype  = "Misc",
+  title    = "ParametricAEM",
+  author   = person("Norsk Regnesentral"),
+  address = "Oslo, Norway",
+  url = "https://github.com/NorskRegnesentral/ParametricAEM",
+  year = 2025
+)
