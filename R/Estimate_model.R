@@ -7,7 +7,10 @@
 #' @param estimate Vector of length 5 with indicators for whether each parameter should be estimated (1) or fixed (0). Defaults to estimating all parameters.
 #' @param lowmode Indicator for whether we should use the lowest modal age (1). Default is to use the modal age closest to the mean (0).
 #'
-#' @return a list with par_est: the estimated parameters and corresponding standard deviations, Sigma: the covariance matrix for the estimated parameters, loglik: the log likelihood
+#' @return a list with
+#'         estimate: the estimated parameters and corresponding standard deviations,
+#'         Sigma: the covariance matrix for the estimated parameters,
+#'         loglik: the log likelihood
 #' @export
 #'
 #' @examples
