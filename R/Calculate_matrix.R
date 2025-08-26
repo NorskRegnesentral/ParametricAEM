@@ -1,5 +1,8 @@
 #' Calculate age-reading error matrix from parameters
 #'
+#'Calculates the age-reading error matrix from a vector of input parameters,
+#' for any minimum and maximum age.
+#'
 #' @param par Numerical vector containing the parameters
 #'            for calculating the age-reading error matrix
 #'            in order: beta0, beta1, alpha0, alpha1, phi

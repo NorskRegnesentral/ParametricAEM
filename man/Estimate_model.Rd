@@ -27,7 +27,10 @@ Estimate_model(
 \item{lowmode}{Indicator for whether we should use the lowest modal age (1). Default is to use the modal age closest to the mean (0).}
 }
 \value{
-a list with par_est: the estimated parameters and corresponding standard deviations, Sigma: the covariance matrix for the estimated parameters, loglik: the log likelihood
+a list with
+estimate: the estimated parameters and corresponding standard deviations,
+Sigma: the covariance matrix for the estimated parameters,
+loglik: the log likelihood
 }
 \description{
 Estimate the parametric age-reading error matrix

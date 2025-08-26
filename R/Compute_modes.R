@@ -1,5 +1,8 @@
 #' Compute modal ages per fish
 #'
+#' Takes a data frame of read ages with multiple readings per fish (identified by a unique identifier) and adds
+#' the modal age(s) closest to the mean with weights, and the lowest modal age.
+#'
 #' @param data A data frame with one row per age-reading containing at least the columns:
 #'  FishID, a unique identifier per fish
 #'  age, an age-reading
