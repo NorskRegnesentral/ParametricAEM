@@ -1,0 +1,33 @@
+---
+title: "Data examples"
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Data examples
+The four data sets are examples of age-reading exchange data sets where individual fish are aged by several readers. Mackerel_otoliths.csv contains otolith readings of Atlantic mackerel, NSAS_herring_otoliths.csv contains otolith readings of North Sea Autumn-Spawning herring, NSS_herring_otoliths.csv contains otolith readings of Norwegian Spring-Spawning herring, and NSS_herring_scales.csv contains scale readings of Norwegian Spring-Spawning herring. 
+
+# Columns used in ParametricAEM
+In this R-package, we use the following columns
+*FishID: String, individual identifier for each fish
+*reader: String, identifier for each individual reader
+*expertise: Boolean, indicator for whether the reader is an expert (1) or not (0)
+*age: Integer, age read by the reader
+
+An extract of the relevant columns for the scale readings of Norwegian Spring-Spawning herring is shown below
+
+```{r}
+
+file_path = system.file("extdata",
+                         "NSS_herring_scales.csv",
+                          package = "ParametricAEM")
+data_nss_scales = read.csv(file_path, sep = ",")
+data_sub = data_nss_scales[,c("FishID", "reader", "expertise", "age")]
+head(data_sub, n = 50)
+```
